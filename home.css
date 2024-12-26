@@ -86,19 +86,135 @@
 
 /******************************************              Coursol START             ************************************/
 
+
 .c-item{
-    height: 480px;
+    height: 88vh;
 }
 
 .c-img{
     height: 100% ;
     object-fit: cover;
-    filter: brightness(0.6);
+    /* filter: brightness(0.6); */
+}
+.carousel-caption{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0px;
+  /* left: 100px; */
+}
+.carousel-item-h1{
+  font-size: 50px;
+  font-weight: 600;
+  color: #002e5b;
+}
+.btn-warning{
+  background-color: #f15a24;
+  margin-right: 15px;
+  border-radius: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 450;
+}
+.btn-secondary{
+  border-radius: 2px;
+  padding-left: 35px;
+  padding-right: 35px;
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 450;
+}
+.btn-warning:hover,
+.btn-secondary:hover{
+  background-color: #ffff;
+  color: #f15a24;
+  border: 1px solid #f15a24;
 }
 
+.carousel-labels{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.label1 {
+  position: relative;
+  display: inline-block;
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  /* transition: opacity 0.3s ease, transform 0.3s ease;  */
+}
+
+.card2 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: opacity 0.3s ease, visibility 0s ease 0.3s; Smooth transition for opacity, and delay visibility */
+}
+
+.label1:hover .card {
+  opacity: 0; /* Hide the original card's content */
+  visibility: hidden; /* Ensure the card is completely hidden */
+}
+
+.label1:hover .card2 {
+  opacity: 1; /* Show the new card */
+  visibility: visible; /* Make card2 visible */
+}
 
 
 /******************************************              Coursol END              ********************************************/
 
+  
+  .slide{
+    margin-top: 70px;
+  }
+
+
+  /******************************    for corosol btn ***********/
+
+  .carousel-indicatorss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Space between buttons */
+    margin-top: 480px;
+  }
+  
+  .carousel-indicatorss input[type="checkbox"] {
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%; 
+    background-color: #ffffff;
+    cursor: pointer;
+    transform: scale(1.2);
+
+    /* transition: transform 0.3s ease, background-color 0.3s ease; */
+  }
+  
+  .carousel-indicatorss input[type="checkbox"]:hover,
+  .carousel-indicatorss input[type="checkbox"]:checked {
+    background-color: #ffffff; /* Active and hover color */
+    transform: scale(1.4);
+  }
   
   
