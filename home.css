@@ -1,0 +1,104 @@
+.navbar-wrap{
+    background-color: #002E5B
+}
+
+.navbar-brand {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .v2-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #3a8cc1; /* Blue color */
+  }
+  
+  .solutions-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f76c3a; /* Orange color */
+    margin-left: 5px;
+  }
+  
+  .slogan {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #ffffff; /* White color for text */
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  /* 88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 */
+
+
+  .nav-item {
+    position: relative; /* Ensure the dropdown aligns relative to this */
+}
+
+.dropdown-menu {
+    position: absolute; /* Position the dropdown absolutely */
+    top: 100%; /* Place it just below the parent element */
+    left: 0; /* Align it to the left of the parent */
+    border-radius: 0;
+    padding: .5em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
+    display: none; /* Initially hidden */
+    flex-direction: row; /* Keep the horizontal layout */
+    background-color: white; /* Ensure background is visible */
+    z-index: 1000; /* Place it above other elements */
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu {
+    display: flex; /* Show the dropdown on hover or focus */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 1rem; /* Add spacing between columns */
+}
+
+.dropdown-menu ul:not(:first-child) {
+    border-left: 1px solid #ccc; /* Add a vertical line to separate columns */
+    padding-left: 1rem; /* Add space between the line and text */
+}
+
+.dropdown-menu li a {
+    color: gray;
+    padding: .5rem 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #000;
+}
+
+/******************************************              Coursol START             ************************************/
+
+.c-item{
+    height: 480px;
+}
+
+.c-img{
+    height: 100% ;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+
+/******************************************              Coursol END              ********************************************/
+
+  
+  
